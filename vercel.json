@@ -1,0 +1,14 @@
+ {
+     "builds": [
+         {
+             "src": "query_classifier.py",
+             "use": "@vercel/python"
+         }
+     ],
+     "routes": [
+         {
+             "src": "/(.*)",
+             "dest": "api/hello.py"
+         }
+     ]
+ }
